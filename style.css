@@ -1,0 +1,404 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 62.5%;
+}
+main {
+	width: 70%;
+	margin: 0 auto;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+#score {
+	text-align: left;
+	margin-left: 30%;
+}
+#rubrik {
+	font-size: 4em;
+	text-align: center;
+	font-family: 'Coiny', cursive;
+}
+.gamediv {
+	text-align: center;
+	height: 100px;
+	margin-bottom: 18%;
+}
+#clickerbutton {
+	background-color: #00ff15;
+	border-color: black;
+	font-size: 5em;
+	border-radius: 30px;
+	padding: 1% 2% 1% 2%;
+	font-family: 'Lilita One', cursive;
+	box-shadow: 0px 0px 20px black;
+}
+#clickerbutton:hover {
+	border-color: grey;
+	border-color: black;	
+}
+#clickerbutton:active {
+	border-color: black;
+	animation: klicka 0.15s;
+}
+#clickerbutton:focus {
+	outline: 0px;
+}
+.score {
+	font-size: 3em;
+}
+							/* ↓Knappar för powerups↓ */
+#sten {
+	font-size: 2em;
+	width: 12%;
+	color: white;
+	background-color: #8e8e8e;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#pinne {
+	font-size: 2em;
+	width: 12%;
+	color: white;
+	background-color: #6bc8ff;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#stav {
+	font-size: 2em;
+	width: 12%;
+	color: white;
+	background-color: #0046f7;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#kniv {
+	font-size: 2em;
+	width: 12%;
+	color: white;
+	background-color: #afff7a;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#machete {
+	font-size: 2em;
+	width: 15%;
+	color: white;
+	background-color: #00ba0f;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#svärd {
+	font-size: 2em;
+	width: 12%;
+	color: white;
+	background-color: #918a00;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#spjut {
+	font-size: 2em;
+	width: 12%;
+	color: white;
+	background-color: #b75b00;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#pilbåge {
+	font-size: 2em;
+	width: 14%;
+	color: white;
+	background-color: #5d00ff;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#glock {
+	font-size: 2em;
+	width: 12%;
+	color: white;
+	background-color: #8e8e8e;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#uzi {
+	font-size: 2em;
+	width: 12%;
+	color: white;
+	background-color: #8e8e8e;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#ak47 {
+	font-size: 2em;
+	width: 12%;
+	color: white;
+	background-color: #8e8e8e;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.2%;
+	border-color: black;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+							/* ↓Animation (färgljus) för när man låser upp glock, uzi och ak47↓ */
+@keyframes rosa {
+  0% {box-shadow: 0px 0px 0px 00px #ff00b2;}
+  10% {box-shadow: 0px 0px 50px 25px #ff00b2;}
+  100% {box-shadow: 0px 0px 0px 00px #ff00b2;}
+}
+@keyframes röd {
+  0% {box-shadow: 0px 0px 0px 00px #ff0000;}
+  10% {box-shadow: 0px 0px 150px 75px #ff0000;}
+  100% {box-shadow: 0px 0px 0px 00px #ff0000;}
+}
+@keyframes guld {
+  0% {box-shadow: 0px 0px 0px 00px #ffd419;}
+  10% {box-shadow: 0px 0px 2000px 1000px #ffd419;}
+  100% {box-shadow: 0px 0px 0px 00px #ffd419;}
+}
+/*							Misslyckat (kan inte få igång den i javascriptet)
+@keyframes 1up {
+  0% {font-size: 3em;}
+  50% {font-size: 4em;}
+  100% {font-size: 3em;}
+} */
+							/* ↓Aktiverar tryck-animationen när man klickar↓ */
+#sten:active {
+	animation: sten 0.2s;
+}
+#pinne:active {
+	animation: pinne 0.2s;
+}
+#stav:active {
+	animation: stav 0.2s;
+}
+#kniv:active {
+	animation: kniv 0.2s;
+}
+#machete:active {
+	animation: machete 0.2s;
+}
+#svärd:active {
+	animation: svärd 0.2s;
+}
+#spjut:active {
+	animation: spjut 0.2s;
+}
+#pilbåge:active {
+	animation: pilbåge 0.2s;
+}
+#glock:active {
+	animation: glock 0.2s;
+}
+#uzi:active {
+	animation: uzi 0.2s;
+}
+#ak47:active {
+	animation: ak 0.2s;
+}
+.p {
+	display: inline-block;
+	margin-right: 2%;
+}
+							/* ↓Text för antal powerups↓ */
+#stenAntal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #8e8e8e;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#pinneAntal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #6bc8ff;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#stavAntal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #0046f7;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#knivAntal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #afff7a;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#macheteAntal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #00ba0f;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#svärdAntal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #918a00;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#spjutAntal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #b75b00;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#pilbågeAntal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #5d00ff;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#glockAntal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #ff00b2;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#uziAntal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #ff0000;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#ak47Antal {
+	font-family: 'Titan One', cursive;
+	font-size: 3em;
+	color: #ffd419;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+							/* ↓Animation för när man trycker på knapparna↓ */
+@keyframes klicka {
+  0% {font-size: 5em;padding-top: 1%;background-color: #00ff15;}
+  10% {font-size: 4.7em;padding-top: 1%;background-color: #008c0b;margin-top: 0.36%;}
+  100% {font-size: 5em;padding-top: 1%;background-color: #00ff15;}
+}
+@keyframes sten {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #8e8e8e;}
+  10% {font-size: 1.9em;padding-top: 0.2%;background-color: #707070;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #8e8e8e;}
+}
+@keyframes pinne {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #6bc8ff;}
+  10% {font-size: 1.85em;padding-top: 0.2%;background-color: #5194bc;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #6bc8ff;}
+}
+@keyframes stav {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #0046f7;}
+  10% {font-size: 1.85em;padding-top: 0.2%;background-color: #0039cc;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #0046f7;}
+}
+@keyframes kniv {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #afff7a;}
+  10% {font-size: 1.85em;padding-top: 0.2%;background-color: #81bc5a;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #afff7a;}
+}
+@keyframes machete {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #00ba0f;}
+  10% {font-size: 1.85em;padding-top: 0.2%;background-color: #008c0b;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #00ba0f;}
+}
+@keyframes svärd {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #918a00;}
+  10% {font-size: 1.85em;padding-top: 0.2%;background-color: #7c7600;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #918a00;}
+}
+@keyframes spjut {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #b75b00;}
+  10% {font-size: 1.85em;padding-top: 0.2%;background-color: #9b4d00;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #b75b00;}
+}
+@keyframes pilbåge {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #5d00ff;}
+  10% {font-size: 1.85em;padding-top: 0.2%;background-color: #4400bc;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #5d00ff;}
+}
+@keyframes glock {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #ff00b2;}
+  10% {font-size: 1.85em;padding-top: 0.2%;background-color: #720050;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #ff00b2;}
+}
+@keyframes uzi {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #ff0000;}
+  10% {font-size: 1.85em;padding-top: 0.2%;background-color: #680000;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #ff0000;}
+}
+@keyframes ak {
+  0% {font-size: 2em;padding-top: 0.2%;background-color: #ffd419;}
+  10% {font-size: 1.85em;padding-top: 0.2%;background-color: #dbb200;margin-top: 0.20%;}
+  100% {font-size: 2em;padding-top: 0.2%;background-color: #ffd419;}
+}
+							/* ↓förhindrar jobbiga rutor runt knapparna↓ */
+#sten:focus {
+	outline: 0px;
+}
+#pinne:focus {
+	outline: 0px;
+}
+#stav:focus {
+	outline: 0px;
+}
+#kniv:focus {
+	outline: 0px;
+}
+#machete:focus {
+	outline: 0px;
+}
+#svärd:focus {
+	outline: 0px;
+}
+#spjut:focus {
+	outline: 0px;
+}
+#pilbåge:focus {
+	outline: 0px;
+}
+#glock:focus {
+	outline: 0px;
+}
+#uzi:focus {
+	outline: 0px;
+}
+#ak47:focus {
+	outline: 0px;
+}
